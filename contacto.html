@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(234, 226, 216);
+                margin: 0;
+                padding: 15px;
+                height: 100%;
+            }
+            nav{
+                background-color: rgb(70, 115, 117);
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                position: fixed;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 200px;
+                padding: 20px;
+                gap: 15px;
+            }
+            nav a{
+                background-color: rgb(212, 200, 184);
+                color: rgb(0, 0, 0);
+                display: block;
+                padding: 15px 20px;
+                text-decoration: none;
+                border-radius: 8px;
+                text-align: center;
+                font-size: 18px;
+            }
+            nav a:hover{
+                background-color:rgb(157, 148, 136)
+            }
+            h1, p{
+                margin-left: 800px;
+                margin-right: 800px;
+            }
+            form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px #707070;
+            }
+            form label {
+            display: block;
+            margin-top: 10px;
+            color: #080233;
+            font-weight: bold;
+            }
+            form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            }
+            form button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 12px;
+            color: white;
+            background-color: rgb(70, 115, 117);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="conocenos.html">Conócenos</a>
+            <a href="galeria.html">Galería</a>
+            <a href="ubicacion.html">Ubicación</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <h1>Contacto</h1>
+        <hr>
+        <br>
+        <br>
+        <form action="mailto:luisgerardochavez05@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje o pedido" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>

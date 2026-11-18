@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(234, 226, 216);
+                margin: 0;
+                padding: 15px;
+                height: 100%;
+            }
+            nav{
+                background-color: rgb(70, 115, 117);
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                position: fixed;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 200px;
+                padding: 20px;
+                gap: 15px;
+            }
+            nav a{
+                background-color: rgb(212, 200, 184);
+                color: rgb(0, 0, 0);
+                display: block;
+                padding: 15px 20px;
+                text-decoration: none;
+                border-radius: 8px;
+                text-align: center;
+                font-size: 18px;
+            }
+            nav a:hover{
+                background-color:rgb(157, 148, 136)
+            }
+            h1, p{
+                margin-left: 800px;
+                margin-right: 800px;
+            }
+            .galeria{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                justify-content: center;
+                margin-left: 230px;
+                padding: 10px;
+            }
+            .galeria img{
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="conocenos.html">Conócenos</a>
+            <a href="galeria.html">Galería</a>
+            <a href="ubicacion.html">Ubicación</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <h1>Galería</h1>
+        <hr>
+        <br>
+        <br>
+        <div class="galeria">
+            <img src="img/evento1.jpeg">
+            <img src="img/evento2.jpeg">
+            <img src="img/evento3.jpeg">
+        </div>
+        <div class="galeria">
+            <img src="img/evento4.jpeg">
+            <img src="img/evento5.jpeg">
+            <img src="img/evento6.jpeg">
+        </div>
+
+    </body>
+</html>

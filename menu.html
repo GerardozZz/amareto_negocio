@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(234, 226, 216);
+                margin: 20px;
+                padding: 0;
+                height: 100%;
+            }
+            h1{
+                text-align: center;
+                color: rgb(29, 55, 3);
+            }
+            h2{
+                text-align: center;
+                color: rgb(29, 55, 3);
+            }
+            .contenedor {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 50px;
+                max-width:1000px;
+                margin:auto
+            }
+            .card{
+                background-color: azure;
+                border-radius: 15px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 4px 8px #696969;
+                transition: 0.3s;
+                display:block;
+                height: 200px;
+            }
+            .card img {
+                width: 50%;
+                height: 50%;
+                border-radius: 8px;
+            }
+            .card p {
+                color: rgb(29, 55, 3);
+                font-size: 12px;
+                text-align: left;
+            }
+            .card:hover{
+                transform: scale(1.1);
+                border-color: cadetblue;
+                box-shadow: 0 4px 8px #696969;                
+            }
+            .casa{
+                width: 3%;
+                border-radius: 45px;
+                display: block;
+            }
+            .casa:hover{
+                cursor:pointer;
+                box-shadow: 0 4px 8px #696969;                
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html"><img class="casa" src="img/casa.jpeg"></a>
+        <div class="contenedor">
+            <div class="card">
+                <img src="img/bebida9.jpeg">
+                <h2>Frapuccino</h2>
+                <p>bebida a base de leche, un espresso y la escencia del sabor de tu preferencia</p>
+            </div>
+            <div class="card">
+                <img src="img/burritos.jpeg">
+                <h2>Burritos</h2>
+                <p>Burritos de carne deshebrada, acompañados de salsa de tomate casera</p>
+            </div>
+            <div class="card">
+                <img src="img/chilaquiles.jpeg">
+                <h2>Chilaquiles</h2>
+                <p>Chilaquiles tradicionales, con salsa de tu preferencia y proteina entre pollo, huevo o carne arrachera</p>
+            </div>
+        </div>
+        <br>
+        <div class="contenedor">
+            <div class="card">
+                <img src="img/croisant.jpeg">
+                <h2>croissant</h2>
+                <p>Pan de croisant con relleno salado de queso y jamón, o dulce de frutas en ámibar y lechera</p>
+            </div>
+            <div class="card">
+                <img src="img/bebida2.jpeg">
+                <h2>Frappé</h2>
+                <p>Bebida a base de leche y escencia del sabor de tu preferencia</p>
+            </div>
+            <div class="card">
+                <img src="img/waffle.jpeg">
+                <h2>Waffle</h2>
+                <p>Waffle salado o dulce preparado a tu gusto</p>
+            </div>
+        </div>
+        <br>
+        <div class="contenedor">
+            <div class="card">
+                <img src="img/bebida4.jpeg">
+                <h2>Latte</h2>
+                <p>Bebida a base de leche y café o escencia, sin azucar</p>
+            </div>
+            <div class="card">
+                <img src="img/molletes.jpeg">
+                <h2>Molletes</h2>
+                <p>Pan de birote preparado dulce o salado según la elección</p>
+            </div>
+            <div class="card">
+                <img src="img/bebida7.jpeg">
+                <h2>Frapucchino especial</h2>
+                <p>frapucchino de sabores únicos con decoración única</p>
+            </div>
+        </div>
+        <br>
+        <div class="contenedor">
+            <div class="card">
+                <img src="img/flan.jpeg">
+                <h2>Flan Napolitano</h2>
+                <p>Cremoso flan de caramelo</p>
+            </div>
+            <div class="card">
+                <img src="img/sandwich.jpeg">
+                <h2>Sandwich</h2>
+                <p>Delicioso pan de sandwich con mantequilla, relleno de cebolla caramelizada</p>
+            </div>
+            <div class="card">
+                <img src="img/bebida5.jpeg">
+                <h2>Bebidas del mes</h2>
+                <p>Bebidas únicas con temáticas especiales del mes. Por tiempo limitado!</p>
+            </div>
+        </div>
+    </body>            
+</html>
